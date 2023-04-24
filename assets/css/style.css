@@ -111,7 +111,7 @@ img {
 
 
 .navbar {
-    background-color: var(--color-base);
+    background-color: #222;
 }
 
 .navbar .nav-link {

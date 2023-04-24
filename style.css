@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+i{
+    color:#deff58;
+    position: relative;
+    font-size: 42px;
+}
+.skill-circle{
+    color: #fff;
+}
+.r-circle-1{
+	stroke-dasharray:280;
+}
+.r-circle-2{
+	stroke-dasharray:260;
+}
+.r-circle-3{
+	stroke-dasharray:240;
+}
+.svg-circle{
+	transform:rotate(260deg);
+}
+.carousel-caption, .carousel-caption h5{
+    color: #deff58 !important;
+    font-weight: 700;
+}
+
+.port-1{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    background-color: #033f47;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.8;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: scale(0.5,0.5);
+}
+.port:hover .port-1{
+	opacity:1;
+	color:#fff;
+	transform:scale(1,1);
+}
+.port-1::before{
+    content: "";
+	position:absolute;
+    width: 32px;
+    height: 32px;
+    top: 15px;
+    left: 15px;
+    border-top: 3px solid #bdc6ca;
+    border-left: 3px solid #bdc6ca;
+}
+.port-1::after{
+    content: "";
+	position:absolute;
+    width: 32px;
+    height: 32px;
+    right: 15px;
+    bottom: 15px;
+    border-right: 3px solid #bdc6ca;
+    border-bottom: 3px solid #bdc6ca;
+}
+
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url('../images/kaliraj-1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+    }
+}

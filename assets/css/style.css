@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #e38528;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand:#f5b779;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+	--color-br:  #666;
+	--color-b:    #111;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+   
+    background: #fcf2e8;
+    color: var(--color-b);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: ;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-br);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img {
+    width: 100%;
+}
+.navbar{
+	
+}
+.svg{
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+			bottom: 0;
+			height: 85vh;
+			width: 100%;
+        }
+        .wave {
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            padding: 132%;
+            vertical-align: middle;
+            top: 0;
+            left: 0;
+			transform: rotate(270deg);
+			/*position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;*/
+			
+			
+        }
+       
+/*.waves{
+  width: 100%;
+  bottom: 0;
+  /*height: 100%;
+  position: absolute;
+  z-index: 99;
+}
+
+.waves svg{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.spacer{
+  height: 100px;
+  width: 100%;
+}
+
+@keyframes example {
+  0%   {
+    left:0px;
+    top:0px;}
+  
+  50%  {
+    left:-2000px;
+    top:200px;}
+  
+  100% {
+    left:0px; 
+    top:0px;}
+}*/
+
+
+.navbar {
+    background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+    color: #f39232;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #e38528cc;
+}
+
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+h1 span {
+    color: var(--color-heading);
+    text-transform: uppercase;
+}
+h2 span {
+    color: var(--color-heading);
+    text-transform: uppercase;
+}
+.btn-brand {
+    background-color: #e38528f2;
+    border-color: var(--color-heading);
+    color: var(--color-br);
+}
+.border-round{
+	border-radius:15px;
+}
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: #e3852829;
+    color: var(--color-base);
+    border-color: var(--color-heading);
+}
+i{
+    color: #e38528;
+    position: relative;
+    font-size: 42px;
+}
+.skill-circle{
+    color: #fff;
+}
+.r-circle-1{
+	stroke-dasharray:280;
+}
+.r-circle-2{
+	stroke-dasharray:260;
+}
+.r-circle-3{
+	stroke-dasharray:240;
+}
+.svg-circle{
+	transform:rotate(260deg);
+}
+.carousel-caption, .carousel-caption h5{
+    color: #deff58 !important;
+    font-weight: 700;
+}
+
+.port-1{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    background-color:#4a6e52;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.8;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: scale(0.5,0.5);
+}
+.port:hover .port-1{
+	opacity:1;
+	color:#fff;
+	transform:scale(1,1);
+}
+.port-1::before{
+    content: "";
+	position:absolute;
+    width: 32px;
+    height: 32px;
+    top: 15px;
+    left: 15px;
+    border-top: 3px solid #bdc6ca;
+    border-left: 3px solid #bdc6ca;
+}
+.port-1::after{
+    content: "";
+	position:absolute;
+    width: 32px;
+    height: 32px;
+    right: 15px;
+    bottom: 15px;
+    border-right: 3px solid #bdc6ca;
+    border-bottom: 3px solid #bdc6ca;
+}
+
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+		background-color:#222;
+        /*background: linear-gradient(black,black), url('image/P. Siva.jpg');*/
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+    }
+}
+.cursor-1{
+    position: absolute;
+    top:0; left:0;
+    height:1rem; width:1rem;
+    background: var(--main-color);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.cursor-1.active{
+    height:7rem;
+    width:7rem;
+    opacity: .3;
+}
+
+.cursor-2{
+    position: absolute;
+    top:0; left:0;
+    height:4rem; width:4rem;
+    border:.1rem solid var(--main-color);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 10000;
+    transition: .3s linear;
+}
+
+.cursor-2.active{
+    display: none;
+}
